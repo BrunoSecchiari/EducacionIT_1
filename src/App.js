@@ -3,7 +3,9 @@ import Index from "./components/Index/index";
 
 function App() {
   return (
-    <></>
+    <>
+      <Index />
+    </>
   );
 }
 
