@@ -3,12 +3,30 @@ import "./index.css";
 const Index = () => {
   return (
     <>
-      <div className="header">
-        <h3 className="title">MioMio</h3>
-        <div className="cart">Carrito</div>
-        <div className="black-line"></div>
+      <div className="Header">
+        <h3 className="Title">MioMio</h3>
+        <div className="Cart">Carrito</div>
+        <div className="Header__Line"></div>
       </div>
-      <div className="search-bar">Tu búsqueda...</div>
+      <div className="SearchBar">Tu búsqueda...</div>
+
+      <div className="Container">
+        <div className="Boxs Boxs1">
+          <div className="Box">
+            <span>Lorem Ipsum</span>
+          </div>
+        </div>
+        <div className="Boxs Boxs2">
+          <div className="Box">
+            <span>Lorem Ipsum</span>
+          </div>
+        </div>
+        <div className="Boxs Boxs3">
+          <div className="Box">
+            <span>Lorem Ipsum</span>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
