@@ -1,19 +1,22 @@
 .Header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.Title {
-  font-size: 1.3rem;
+.Header__Title {
+  font-size: 2rem;
   font-weight: normal;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1.5rem;
   margin-top: 3rem;
 }
 
-.Cart {
+.Header__Cart {
   display: inline-block;
   border: solid 1px black;
   border-radius: 1rem;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   padding: 0.1rem 1rem;
   margin-bottom: 0.9rem;
 }
@@ -28,12 +31,10 @@
   border: solid 1px black;
   border-radius: 1.5rem;
   color: grey;
-  display: block;
   font-size: 1.25rem;
   text-align: center;
   padding: 0.5rem 0.75rem;
-  margin: 0 auto;
-  margin-top: 2rem;
+  margin: 2.5rem 0;
   width: 50%;
 }
 
@@ -55,6 +56,7 @@
   width: 70%;
   height: 70%;
   background-color: rgba(238, 238, 238, 0.596);
+  font-size: 1.5rem;
 }
 
 .Boxs {

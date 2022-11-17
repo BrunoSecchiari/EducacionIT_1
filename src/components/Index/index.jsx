@@ -4,11 +4,11 @@ const Index = () => {
   return (
     <>
       <div className="Header">
-        <h3 className="Title">MioMio</h3>
-        <div className="Cart">Carrito</div>
+        <h3 className="Header__Title">MioMio</h3>
+        <div className="Header__Cart">Carrito</div>
         <div className="Header__Line"></div>
+        <div className="SearchBar">Tu búsqueda...</div>
       </div>
-      <div className="SearchBar">Tu búsqueda...</div>
 
       <div className="Container">
         <div className="Boxs Boxs1">
