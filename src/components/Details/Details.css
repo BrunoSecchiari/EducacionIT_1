@@ -1,0 +1,59 @@
+.Details__Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Details__Box {
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Details__Image {
+  background-image: url("../../../public/Fotos/Anteojos/ali-pazani-GwglcplmXDs-unsplash.jpg");
+  background-size: contain;
+  height: 100%;
+  width: 62%;
+}
+
+.Details__Title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.Details__Description {
+  width: 75%;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.Details__Colors,
+.Details__Sizes,
+.Details__Price {
+  font-size: 1.1rem;
+  align-self: flex-start;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.Details__Price {
+  font-weight: bold;
+}
+
+.Details__Button {
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 2.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}

@@ -1,15 +1,10 @@
-import "./index.css";
+import Header from "../Header/Header";
+import "./Index.css";
 
 const Index = () => {
   return (
     <>
-      <div className="Header">
-        <h3 className="Header__Title">MioMio</h3>
-        <div className="Header__Cart">Carrito</div>
-        <div className="Header__Line"></div>
-        <div className="SearchBar">Tu búsqueda...</div>
-      </div>
-
+      <Header />
       <div className="Container">
         <div className="Boxs Boxs1">
           <div className="Box">

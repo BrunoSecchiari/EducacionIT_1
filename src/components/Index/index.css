@@ -1,43 +1,3 @@
-.Header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.Header__Title {
-  font-size: 2rem;
-  font-weight: normal;
-  margin-bottom: 1.5rem;
-  margin-top: 3rem;
-}
-
-.Header__Cart {
-  display: inline-block;
-  border: solid 1px black;
-  border-radius: 1rem;
-  font-size: 1.25rem;
-  padding: 0.1rem 1rem;
-  margin-bottom: 0.9rem;
-}
-
-.Header__Line {
-  height: 0;
-  width: 100%;
-  border: solid 1px black;
-}
-
-.SearchBar {
-  border: solid 1px black;
-  border-radius: 1.5rem;
-  color: grey;
-  font-size: 1.25rem;
-  text-align: center;
-  padding: 0.5rem 0.75rem;
-  margin: 2.5rem 0;
-  width: 50%;
-}
-
 .Container {
   margin: 0 auto;
   width: 80%;
@@ -74,11 +34,13 @@
   background-size: cover;
   object-fit: contain;
 }
+
 .Boxs2 {
   background-image: url("../../..//public/Fotos/Anteojos/Anteojos.jpg");
   background-size: cover;
   object-fit: contain;
 }
+
 .Boxs3 {
   background-image: url("../../..//public/Fotos/Anteojos/apostolos-vamvouras-mKi4QEJXRCs-unsplash.jpg");
   background-size: cover;
