@@ -1,27 +1,26 @@
 import Header from "../Header/Header";
 import "./Index.css";
+import Box from "../Box/Box";
 
 const Index = () => {
+  
+  const products = [
+    { id: 1, name: "Anteojos 1", class: "Boxs Boxs1" },
+    { id: 2, name: "Anteojos 2", class: "Boxs Boxs2" },
+    { id: 3, name: "Anteojos 3", class: "Boxs Boxs3" },
+  ];
+  
   return (
     <>
       <Header />
-      <div className="Container">
-        <div className="Boxs Boxs1">
-          <div className="Box">
-            <span>Lorem Ipsum</span>
-          </div>
-        </div>
-        <div className="Boxs Boxs2">
-          <div className="Box">
-            <span>Lorem Ipsum</span>
-          </div>
-        </div>
-        <div className="Boxs Boxs3">
-          <div className="Box">
-            <span>Lorem Ipsum</span>
-          </div>
-        </div>
-      </div>
+      {products.map((product) => (
+        <Box  
+          key={product.id}
+          id={product.id}
+          name={product.name}
+          class={product.class}
+        />
+      ))}
     </>
   );
 };
