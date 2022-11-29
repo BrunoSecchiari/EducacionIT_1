@@ -26,14 +26,3 @@
   width: 100%;
   border: solid 1px black;
 }
-
-.Header__SearchBar {
-  border: solid 1px black;
-  border-radius: 1.5rem;
-  color: grey;
-  font-size: 1.25rem;
-  text-align: center;
-  padding: 0.5rem 0.75rem;
-  margin: 2.5rem 0;
-  width: 50%;
-}
