@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./SearchBar.css";
 
 const SearchBar = () => {
-  const [search, setSearch] = useState("Valor inicial");
+  const [search, setSearch] = useState("Tu busqueda...");
 
   return (
     <>
@@ -12,6 +12,7 @@ const SearchBar = () => {
         name="search-bar"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
+        onFocus={() => setSearch("")}
       ></input>
     </>
   );
