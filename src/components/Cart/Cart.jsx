@@ -1,31 +1,33 @@
+import Header from "../Header/Header";
 import "./Cart.css";
 
 const Cart = () => {
   return (
     <>
-      <div className="Cart__Container">
-        <h3 className="Cart__Title">Lorem Ipsum</h3>
-        <p className="Cart__Size">Talle: S</p>
-        <p className="Cart__Color">Color: Negro</p>
-        <div className="Cart__BottomRow">
-          <div className="Cart__Price">$1500</div>
-          <div className="Cart__Quantity">
-            <div className="Cart__QuantityMinus">-</div>
-            <p className="Cart__QuantityAmount">1</p>
-            <div className="Cart__QuantityPlus">+</div>
+      <Header />
+      <div className="Cart">
+        <div className="Cart__Container">
+          <div className="Cart__Title">Lorem Ipsum</div>
+          <div className="Cart__Details">Talle: S | Color: Negro</div>
+          <div className="Cart__BottomRow">
+            <div className="Cart__Price">$1500</div>
+            <div className="Cart__Quantity">
+              <div>-</div>
+              <div>1</div>
+              <div>+</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="Cart__Container">
-        <h3 className="Cart__Title">Lorem Ipsum</h3>
-        <p className="Cart__Size">Talle: S</p>
-        <p className="Cart__Color">Color: Negro</p>
-        <div className="Cart__BottomRow">
-          <div className="Cart__Price">$1500</div>
-          <div className="Cart__Quantity">
-            <div className="Cart__QuantityMinus">-</div>
-            <p className="Cart__QuantityAmount">2</p>
-            <div className="Cart__QuantityPlus">+</div>
+        <div className="Cart__Container">
+          <div className="Cart__Title">Lorem Ipsum</div>
+          <div className="Cart__Details">Talle: S | Color: Negro</div>
+          <div className="Cart__BottomRow">
+            <div className="Cart__Price">$1000</div>
+            <div className="Cart__Quantity">
+              <div>-</div>
+              <div>2</div>
+              <div>+</div>
+            </div>
           </div>
         </div>
       </div>

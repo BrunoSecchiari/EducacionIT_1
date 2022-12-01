@@ -1,5 +1,6 @@
 import Header from "../Header/Header";
 import Products from "../Products/Products";
+import SearchBar from "../SearchBar/SearchBar";
 import "./Index.css";
 
 const Index = () => {
@@ -12,6 +13,7 @@ const Index = () => {
   return (
     <>
       <Header />
+      <SearchBar />
       <div className="Container">
         {products.map((product, index) => (
           <Products key={index} name={product.name} class={product.class} />

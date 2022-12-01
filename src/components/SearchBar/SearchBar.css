@@ -1,4 +1,10 @@
-.Header__SearchBar {
+.SearchBar__Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SearchBar__Input {
   border: solid 1px black;
   border-radius: 1.5rem;
   color: grey;
