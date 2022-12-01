@@ -1,0 +1,5 @@
+.User__Link:active,
+.User__Link:checked,
+.User__Link:focus {
+  text-decoration: none;
+}
