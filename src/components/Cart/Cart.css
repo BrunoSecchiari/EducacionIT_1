@@ -49,13 +49,19 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 2rem;
 }
 
 .Cart__ShopButton,
 .Cart__PayButton {
+  width: 100%;
   background-color: white;
+  border: solid 1px black;
+  color: black;
   font-size: 18px;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   padding: 1rem;
 }

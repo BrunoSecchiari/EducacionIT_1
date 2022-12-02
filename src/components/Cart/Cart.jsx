@@ -23,7 +23,7 @@ const Cart = () => {
           <div className="Cart__Title">Lorem Ipsum</div>
           <div className="Cart__Details">Talle: S | Color: Negro</div>
           <div className="Cart__BottomRow">
-            <div className="Cart__Price">$1000</div>
+            <div className="Cart__Price">$500</div>
             <div className="Cart__Quantity">
               <div>-</div>
               <div>2</div>
@@ -33,7 +33,7 @@ const Cart = () => {
         </div>
       </div>
       <div className="Cart__Buttons">
-        <Link className="Link" to="">
+        <Link className="Cart__ShopButton" to="/">
           Seguir Comprando
         </Link>
         <Link className="Cart__PayButton">Pagar $2500</Link>
