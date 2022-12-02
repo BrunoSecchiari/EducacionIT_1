@@ -1,3 +1,10 @@
+.Boxs1,
+.Boxs2,
+.Boxs3 {
+  color: black;
+  text-decoration: none;
+}
+
 .Boxs1 {
   background-image: url("../../..//public/Fotos/Anteojos/ali-pazani-GwglcplmXDs-unsplash.jpg");
   background-size: cover;

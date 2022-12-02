@@ -1,11 +1,18 @@
+import { Link, useParams } from "react-router-dom";
 import Header from "../Header/Header";
 import "./Details.css";
 
 const Details = () => {
+  const { id } = useParams();
+  console.log(id);
+
   return (
     <>
       <Header />
       <div className="Details__Container">
+        <Link className="Details__ReturnButton" to="/">
+          Volver
+        </Link>
         <div className="Details__Box">
           <div className="Details__Image"></div>
         </div>
@@ -19,7 +26,9 @@ const Details = () => {
         <div className="Details__Colors">Colores: Rojo, Negro, Blanco</div>
         <div className="Details__Sizes">Talles: S - M - L</div>
         <div className="Details__Price">Precio: $1500</div>
-        <button className="Details__Button">Lo Quiero</button>
+        <Link className="Details__Button" to="/cart">
+          Lo Quiero
+        </Link>
       </div>
     </>
   );

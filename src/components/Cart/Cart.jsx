@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "../Header/Header";
 import "./Cart.css";
 
@@ -32,8 +33,10 @@ const Cart = () => {
         </div>
       </div>
       <div className="Cart__Buttons">
-        <button className="Cart__ShopButton">Seguir Comprando</button>
-        <button className="Cart__PayButton">Pagar $2500</button>
+        <Link className="Link" to="">
+          Seguir Comprando
+        </Link>
+        <Link className="Cart__PayButton">Pagar $2500</Link>
       </div>
     </>
   );

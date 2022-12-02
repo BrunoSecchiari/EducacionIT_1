@@ -16,7 +16,12 @@ const Index = () => {
       <SearchBar />
       <div className="Container">
         {products.map((product, index) => (
-          <Products key={index} name={product.name} class={product.class} />
+          <Products
+            key={index}
+            id={product.id}
+            name={product.name}
+            class={product.class}
+          />
         ))}
       </div>
     </>
