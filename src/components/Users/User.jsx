@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "./Users.css";
 
 const User = () => {
   const { id } = useParams();
@@ -13,8 +14,15 @@ const User = () => {
 
   return (
     <>
-      <span>{user.name} </span>
-      <a href={`mailto:${user.email}`}>{user.email}</a>
+      <span className="User_ID">
+        <strong>ID:</strong> {user.id}
+      </span>
+      <span className="User__Name">
+        <strong>Nombre:</strong> {user.name}
+      </span>
+      <a href={`mailto:${user.email}`} className="User__Email">
+        <strong>Email:</strong> {user.email}
+      </a>
     </>
   );
 };

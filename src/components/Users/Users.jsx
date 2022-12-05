@@ -14,11 +14,16 @@ const Users = (props) => {
   return (
     <>
       {users.map((user, index) => (
-        <Link to={`/users/${user.id}`} className="User__Link">
-          <div key={index}>
-            <span>{user.name} </span>
-            <a href={`mailto:${user.email}`}>{user.email}</a>
-          </div>
+        <Link key={index} to={`/users/${user.id}`} className="User__Link">
+          <span className="User_ID">
+            <strong>ID:</strong> {user.id}
+          </span>
+          <span className="User__Name">
+            <strong>Nombre:</strong> {user.name}
+          </span>
+          <a href={`mailto:${user.email}`} className="User__Email">
+            <strong>Email:</strong> {user.email}
+          </a>
         </Link>
       ))}
     </>
