@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import "./Users.css";
+import "./UserList.css";
 
 const User = () => {
   const { id } = useParams();

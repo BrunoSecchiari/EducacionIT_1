@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import "./Products.css";
+import "./Product.css";
 
-const Products = (props) => {
+const Product = (props) => {
   const productClass = `Boxs ${props.class ? props.class : ""}`;
 
   return (
@@ -13,4 +13,4 @@ const Products = (props) => {
   );
 };
 
-export default Products;
+export default Product;

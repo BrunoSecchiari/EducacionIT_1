@@ -1,17 +1,3 @@
-.Details__Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.Details__ReturnButton {
-  color: grey;
-  font-size: 20px;
-  text-decoration: none;
-  margin: 2rem;
-}
-
 .Details__Box {
   height: 20rem;
   width: 100%;
@@ -53,16 +39,4 @@
 
 .Details__Price {
   font-weight: bold;
-}
-
-.Details__Button {
-  background-color: white;
-  border: solid 1px black;
-  border-radius: 2.5rem;
-  color: black;
-  font-size: 1.1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1rem;
-  margin-bottom: 1rem;
 }
