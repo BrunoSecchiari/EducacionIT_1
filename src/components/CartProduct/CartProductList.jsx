@@ -11,7 +11,7 @@ const CartProductList = () => {
         <CartProduct
           key={index}
           color={product.color}
-          count={product.count}
+          count={product.quantity}
           name={product.name}
           price={product.price}
           size={product.size}

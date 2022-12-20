@@ -4,7 +4,7 @@ const CartProductContext = createContext([
   {
     id: 1,
     color: "Negro",
-    count: 1,
+    quantity: 1,
     price: 1500,
     name: "Anteojos 1",
     size: "S",
@@ -12,7 +12,7 @@ const CartProductContext = createContext([
   {
     id: 2,
     color: "Blanco",
-    count: 2,
+    quantity: 2,
     price: 500,
     name: "Anteojos 2",
     size: "M",

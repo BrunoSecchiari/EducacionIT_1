@@ -11,7 +11,7 @@ const CartProduct = (props) => {
         <div className="Cart__Price">${props.price}</div>
         <div className="Cart__Quantity">
           <div>-</div>
-          <div>{props.count}</div>
+          <div>{props.quantity}</div>
           <div>+</div>
         </div>
       </div>
