@@ -5,22 +5,22 @@ import {
   CART_DECREASEQUANTITY,
 } from "./action_types";
 
-export const myAddItemAction = (id) => ({
+export const addItem = (id) => ({
   type: CART_ADDITEM,
   payload: id,
 });
 
-export const myIncreaseQuantityAction = (id) => ({
+export const increaseQuantity = (id) => ({
   type: CART_INCREASEQUANTITY,
   payload: id,
 });
 
-export const myDeleteItemAction = (id) => ({
+export const deleteItem = (id) => ({
   type: CART_DELETEITEM,
   payload: id,
 });
 
-export const myDecreaseQuantityAction = (id) => ({
+export const decreaseQuantity = (id) => ({
   type: CART_DECREASEQUANTITY,
   payload: id,
 });

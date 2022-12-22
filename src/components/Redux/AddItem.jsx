@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { myAddItemAction } from "../../redux/cart/actions";
+import { addItem } from "../../redux/cart/actions";
 
 const mapStateToProps = (state) => {
   return {
@@ -9,14 +9,14 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onClick: (id) => {
-      dispatch(myAddItemAction(id));
+    addItem: (id) => {
+      dispatch(addItem(id));
     },
   };
 };
 
 const AddToCartButton = (props) => {
-  return <button onClick={props.onClick}>Add Item</button>;
+  return <button onClick={props.addItem}>Add Item</button>;
 };
 
 const myConnector = connect(mapStateToProps, mapDispatchToProps);
