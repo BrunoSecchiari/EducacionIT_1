@@ -7,7 +7,7 @@ import {
 
 const initialState = [];
 
-const cartReducer = (state = initialState, action) => {
+const myCartReducer = (state = initialState, action) => {
   let newState = state;
 
   switch (action.type) {
@@ -49,4 +49,4 @@ const cartReducer = (state = initialState, action) => {
   }
 };
 
-export default cartReducer;
+export default myCartReducer;
