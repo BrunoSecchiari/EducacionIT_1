@@ -1,26 +1,27 @@
 import {
-  CART_ADDITEM,
-  CART_INCREASEQUANTITY,
-  CART_DELETEITEM,
-  CART_DECREASEQUANTITY,
+  ADDITEM,
+  INCREASEQUANTITY,
+  DELETEITEM,
+  DECREASEQUANTITY,
 } from "./action_types";
 
-export const addItem = (id) => ({
-  type: CART_ADDITEM,
-  payload: id,
-});
+export const addItem = (id) => {
+  return function (dispatch) {
+    dispatch({ type: ADDITEM, payload: id });
+  };
+};
 
 export const increaseQuantity = (id) => ({
-  type: CART_INCREASEQUANTITY,
+  type: INCREASEQUANTITY,
   payload: id,
 });
 
 export const deleteItem = (id) => ({
-  type: CART_DELETEITEM,
+  type: DELETEITEM,
   payload: id,
 });
 
 export const decreaseQuantity = (id) => ({
-  type: CART_DECREASEQUANTITY,
+  type: DECREASEQUANTITY,
   payload: id,
 });

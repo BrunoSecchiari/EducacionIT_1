@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/actions";
+import "./AddItem.css";
 
 const mapStateToProps = (state) => {
   return {
@@ -16,7 +17,11 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 const AddToCartButton = (props) => {
-  return <button onClick={props.addItem}>Add Item</button>;
+  return (
+    <button className="Details__AddButton" onClick={props.addItem}>
+      Lo Quiero
+    </button>
+  );
 };
 
 const myConnector = connect(mapStateToProps, mapDispatchToProps);

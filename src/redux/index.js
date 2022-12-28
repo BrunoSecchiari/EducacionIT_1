@@ -6,6 +6,6 @@ const mainReducer = combineReducers({
   cart: cartReducer,
 });
 
-const store = configureStore(mainReducer);
+const store = configureStore({ reducer: mainReducer });
 
 export default store;

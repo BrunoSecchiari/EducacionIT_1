@@ -1,8 +1,8 @@
 import {
-  CART_ADDITEM,
-  CART_INCREASEQUANTITY,
-  CART_DELETEITEM,
-  CART_DECREASEQUANTITY,
+  ADDITEM,
+  INCREASEQUANTITY,
+  DELETEITEM,
+  DECREASEQUANTITY,
 } from "./action_types";
 
 const initialState = [];
@@ -11,11 +11,10 @@ const cartReducer = (state = initialState, action) => {
   let newState = state;
 
   switch (action.type) {
-    case CART_ADDITEM:
-      newState.push({ id: action.payload, quantity: 1 });
-      return newState;
+    case ADDITEM:
+      return [...state, { id: action.payload, quantity: 1 }];
 
-    case CART_INCREASEQUANTITY:
+    case INCREASEQUANTITY:
       newState = newState.map((item) => {
         if (item.id === action.payload)
           return {
@@ -26,11 +25,11 @@ const cartReducer = (state = initialState, action) => {
       });
       return newState;
 
-    case CART_DELETEITEM:
+    case DELETEITEM:
       newState = newState.filter((item) => item.id !== action.payload);
       return newState;
 
-    case CART_DECREASEQUANTITY:
+    case DECREASEQUANTITY:
       newState = newState.map((item) => {
         if (item.id === action.payload)
           return {
