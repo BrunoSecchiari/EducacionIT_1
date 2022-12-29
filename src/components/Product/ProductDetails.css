@@ -28,15 +28,9 @@
   margin-top: 0;
 }
 
-.Details__Colors,
-.Details__Sizes,
 .Details__Price {
-  font-size: 1.1rem;
   align-self: flex-start;
   margin-bottom: 2rem;
   margin-left: 2rem;
-}
-
-.Details__Price {
   font-weight: bold;
 }
